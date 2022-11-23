@@ -28,26 +28,6 @@ export const RegistrationScreen = () => {
   const [type, setType] = useState(false);
   const handleClick = () => setType("text");
 
-  // const [dimensions, setDimensions] = useState(
-  //   Dimensions.get("window").width - 8 * 2
-  // );
-
-  // useEffect(() => {
-  //   onchange = () => {
-  //     const width = Dimensions.get("window").width - 8 * 2;
-  //     setDimensions(width);
-  //     // setIsShowKeyboard(true);
-  //   };
-  //   Dimensions.addEventListener("change", onchange);
-  //   return () => {
-  //     Dimensions.removeEventListener("change", onchange);
-  //   };
-  // }, []);
-
-  // useEffect(() => {
-  //   setIsShowKeyboard(true);
-  // });
-
   const KeyboardHide = () => {
     setIsShowKeyboard(true);
     console.log(setIsShowKeyboard);
@@ -67,7 +47,6 @@ export const RegistrationScreen = () => {
             style={{
               ...styles.inputForm,
               marginBottom: isShowKeyboard ? 45 : 150,
-              // width: dimensions,
             }}
           >
             <Text style={styles.title}>Регистрация</Text>
